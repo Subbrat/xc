@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    /*
+    while ( condition )
+    {
+        // statements 
+        
+        
+    }
+    */
+    
+    
+   //  initialisation :: increment ++ :: decrement --
+   // prefix :: suffix
+   
+   
+   int a=5;
+   
+   printf("%d",a);
+   printf("\n%d",++a); // before a is printed a = a + 1
+   printf("\n%d",a++); // after a is printed  a = a + 1
+   printf("\n%d",a);
+   printf("\n%d",--a);
+   printf("\n%d",a--);
+   printf("\n%d",++a);
+   
+   
+   
+}

@@ -1,0 +1,129 @@
+#include <stdio.h>
+int main()
+{
+	float aa,bb;
+	long int a,b,c,d,n,rev=0,rem;
+	char ign;
+	puts("Welcome To mega maths panel.\nHere are available sub-programmes.");
+	puts("A.Simple calculator\nB.Self evaluator\nC.Check for even number\nD.Reverse number\nE.Check for grater number");
+	puts("Enter consecutive alphabet to open sub program");
+	scanf("%s",&ign);
+	switch(ign)
+{
+			case 'A': 
+			puts("SIMPLE CALCULATOR.");
+	printf("enter first operand:	");
+	scanf("%f",&aa);
+	printf("enter any operator:	");
+	scanf("%s",&ign);
+	printf("enter second operand:	");
+	scanf("%f",&bb);
+	switch (ign)
+	{
+		case '+':
+		printf("\nResult=%f",aa+bb);
+		break;	
+		case '-':
+		printf("\nResult=%f",aa-bb);
+		break;		
+		case '*':
+		printf("\nResult=%f",aa*bb);
+		break ;		
+		case '/':
+		printf("\nResult=%f",aa/bb);
+		break;
+		default:
+		puts("INVALID OPERATOR INPUT ! CALCULATION TERMINATED !");
+	}
+			break ;
+			case 'B':
+			puts("SELF EVALUATOR.");
+			printf("Enter first number	");
+	scanf("%f",&aa);
+	printf("Enter second number	");
+	scanf("%f",&bb);
+	printf("\nThe summation is:	%f",aa+bb);
+	printf("\nThe subtraction is:	%f",aa-bb);
+	printf("\nThe multiple is:	%f",aa*bb);
+	printf("\nThe mod is:	%f",aa/bb);
+		if (aa==bb)
+		{
+			printf("\nBoth numbers are equal.");
+		}
+		if(a>b)
+		{
+			printf("\nFirst number is grater than second number");
+			
+		}
+		else 
+		{
+			printf("\nSecond number is grater than first number");
+		}
+			break;
+			
+			case 'C':
+			puts("CHECK FOR EVEN OR ODD NUMBER.");
+			printf("\n\nEnter any number:	");
+	scanf("%d",&a);
+	if (a%2==0)
+	{
+		printf("\nYou have entered number:	%d",a);
+		printf("\nIt is an even number !");
+	}
+	else 
+	{
+		printf("\nYou have entered number:	%d",a);
+		printf("\nIt is an odd number !");
+	}
+			break;
+			
+			case 'D':
+			puts("REVERSE NUMBER.");
+			printf("enter a number");
+			scanf("%d",&n);
+			while (n!=0)
+			{
+			rem=n%10;
+			rev=rev*10+rem;
+			n/=10;
+			}
+			printf("REVERSED NUMBER:	%d",rev);
+			break;
+			
+			case 'E':
+			puts("CHECK FOR GRATER NUMBER AMONG THREE NUMBER.");
+			printf("Enter first number			");
+	scanf("%d",&a);
+	printf("Enter second number			");
+	scanf("%d",&b);
+	printf("Enter third number			");
+	scanf("%d",&c);
+	if(a>b)
+		{
+			if(a>c)
+			{
+				printf("the grater number is:%d		",a);
+			}	
+			
+		}
+	else 
+	{
+		if (b>c)
+		{
+			printf("the grater number is:%d		",b);
+		}
+		else{
+			printf("the grater number is:%d		",c);
+		}
+	}
+			break;	
+}
+	printf("\n\nEnter 1 to go back to main menu.");
+	scanf("%d",&a);
+	if(a==1)
+	{
+		puts("");
+		main();
+	}
+	return 0;
+}

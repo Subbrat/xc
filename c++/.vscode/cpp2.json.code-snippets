@@ -1,0 +1,27 @@
+{
+	"cpp snippets": {
+		"prefix": "qq",
+		"body": [
+			"#include<iostream>",
+			"using namespace std;",
+			"int main(){",
+			"${1:startcode;}",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"    return 0;",
+			"}"
+		],
+		"description": " "
+	}
+}
